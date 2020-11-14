@@ -7,6 +7,7 @@ for (var i = 0; i < array.length; i++){
 return total;
 };
 
+//Returns the most and least frequent items in the array
 const findFrequency = function(array) {
   // your code here - don't forget to return an object!
 };
