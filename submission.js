@@ -60,7 +60,8 @@ const largestPair = function(array) {
 };
 
 const removeParenth = function(str) {
-  // your code here - don't forget to return a string!
+  const noParenth = str.replace(/\(.*\)/, '');
+  return noParenth;
 };
 
 const scoreScrabble = function(str) {
