@@ -35,7 +35,19 @@ return total;
 };
 
 const isPalindrome = function(str) {
-  // your code here - don't forget to return a boolean!
+  const isPalindrome = function(str) {
+  let back = '';
+  let word = str.split('');
+  for(i = (word.length - 1); i > -1; i--){
+    back += word[i];
+  }
+  if(back === str){
+    return true;
+  }
+  else{
+    return false;
+  }
+};
 };
 
 const largestPair = function(array) {
