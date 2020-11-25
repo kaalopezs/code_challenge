@@ -34,7 +34,6 @@ return total;
   };
 };
 
-const isPalindrome = function(str) {
   const isPalindrome = function(str) {
   let back = '';
   let word = str.split('');
@@ -48,10 +47,16 @@ const isPalindrome = function(str) {
     return false;
   }
 };
-};
 
 const largestPair = function(array) {
-  // your code here - don't forget to return a number!
+ let initialProduct = array[0] * array[1];
+ for(i = 0; i < array.length; i++){
+  let currentProduct = array[i] * array[i + 1];
+  if(currentProduct > initialProduct){
+   initialProduct = currentProduct;
+  };
+ };
+ return initialProduct;
 };
 
 const removeParenth = function(str) {
