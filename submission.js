@@ -34,8 +34,9 @@ return total;
   };
 };
 
-  const isPalindrome = function(str) {
+ const isPalindrome = function(str) {
   let back = '';
+  str = str.toLowerCase();
   let word = str.split('');
   for(i = (word.length - 1); i > -1; i--){
     back += word[i];
